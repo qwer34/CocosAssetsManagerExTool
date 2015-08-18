@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		220E59A51B8343F300F85BC1 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = ../README.txt; sourceTree = "<group>"; };
 		22766BFC1B7CB14900F7132C /* CocosAssetsManagerExTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CocosAssetsManagerExTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		22766C081B7CB1A600F7132C /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
 		22766C091B7CB1A600F7132C /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		22766BF31B7CB14900F7132C = {
 			isa = PBXGroup;
 			children = (
+				220E59A51B8343F300F85BC1 /* README.txt */,
 				22766C061B7CB1A600F7132C /* Classes */,
 				22766BFD1B7CB14900F7132C /* Products */,
 			);
