@@ -1,0 +1,1 @@
+Manifest generator for AssetsManagerEx of Cocos2d-x.
