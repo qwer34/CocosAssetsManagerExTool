@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22766C101B7CB1A600F7132C /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 22766C081B7CB1A600F7132C /* cJSON.c */; };
+		22766C111B7CB1A600F7132C /* CocosAssetsManagerExTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22766C0B1B7CB1A600F7132C /* CocosAssetsManagerExTool.cpp */; };
+		22766C121B7CB1A600F7132C /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 22766C0D1B7CB1A600F7132C /* md5.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22766BFA1B7CB14900F7132C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22766BFC1B7CB14900F7132C /* CocosAssetsManagerExTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CocosAssetsManagerExTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		22766C081B7CB1A600F7132C /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		22766C091B7CB1A600F7132C /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		22766C0B1B7CB1A600F7132C /* CocosAssetsManagerExTool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CocosAssetsManagerExTool.cpp; sourceTree = "<group>"; };
+		22766C0D1B7CB1A600F7132C /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		22766C0E1B7CB1A600F7132C /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22766BF91B7CB14900F7132C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22766BF31B7CB14900F7132C = {
+			isa = PBXGroup;
+			children = (
+				22766C061B7CB1A600F7132C /* Classes */,
+				22766BFD1B7CB14900F7132C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22766BFD1B7CB14900F7132C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22766BFC1B7CB14900F7132C /* CocosAssetsManagerExTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22766C061B7CB1A600F7132C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22766C0B1B7CB1A600F7132C /* CocosAssetsManagerExTool.cpp */,
+				22766C071B7CB1A600F7132C /* cJSON */,
+				22766C0C1B7CB1A600F7132C /* MD5 */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		22766C071B7CB1A600F7132C /* cJSON */ = {
+			isa = PBXGroup;
+			children = (
+				22766C081B7CB1A600F7132C /* cJSON.c */,
+				22766C091B7CB1A600F7132C /* cJSON.h */,
+			);
+			path = cJSON;
+			sourceTree = "<group>";
+		};
+		22766C0C1B7CB1A600F7132C /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				22766C0D1B7CB1A600F7132C /* md5.c */,
+				22766C0E1B7CB1A600F7132C /* md5.h */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22766BFB1B7CB14900F7132C /* CocosAssetsManagerExTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22766C031B7CB14900F7132C /* Build configuration list for PBXNativeTarget "CocosAssetsManagerExTool" */;
+			buildPhases = (
+				22766BF81B7CB14900F7132C /* Sources */,
+				22766BF91B7CB14900F7132C /* Frameworks */,
+				22766BFA1B7CB14900F7132C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocosAssetsManagerExTool;
+			productName = CocosAssetsManagerExTool;
+			productReference = 22766BFC1B7CB14900F7132C /* CocosAssetsManagerExTool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22766BF41B7CB14900F7132C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Xin;
+				TargetAttributes = {
+					22766BFB1B7CB14900F7132C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 22766BF71B7CB14900F7132C /* Build configuration list for PBXProject "CocosAssetsManagerExTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22766BF31B7CB14900F7132C;
+			productRefGroup = 22766BFD1B7CB14900F7132C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22766BFB1B7CB14900F7132C /* CocosAssetsManagerExTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22766BF81B7CB14900F7132C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22766C121B7CB1A600F7132C /* md5.c in Sources */,
+				22766C101B7CB1A600F7132C /* cJSON.c in Sources */,
+				22766C111B7CB1A600F7132C /* CocosAssetsManagerExTool.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		22766C011B7CB14900F7132C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22766C021B7CB14900F7132C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22766C041B7CB14900F7132C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22766C051B7CB14900F7132C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22766BF71B7CB14900F7132C /* Build configuration list for PBXProject "CocosAssetsManagerExTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22766C011B7CB14900F7132C /* Debug */,
+				22766C021B7CB14900F7132C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22766C031B7CB14900F7132C /* Build configuration list for PBXNativeTarget "CocosAssetsManagerExTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22766C041B7CB14900F7132C /* Debug */,
+				22766C051B7CB14900F7132C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22766BF41B7CB14900F7132C /* Project object */;
+}

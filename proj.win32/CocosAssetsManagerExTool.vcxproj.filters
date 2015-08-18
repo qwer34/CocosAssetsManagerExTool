@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{dddbd1f1-6d50-4e50-a42b-28612593b907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cJSON">
+      <UniqueIdentifier>{de2d6cf8-49d1-4646-9a45-7090ffe8d7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MD5">
+      <UniqueIdentifier>{f12e8a02-834d-4250-9f1c-d28cfa8986a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\cJSON\cJSON.c">
+      <Filter>Classes\cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CocosAssetsManagerExTool.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MD5\md5.c">
+      <Filter>Classes\MD5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\cJSON\cJSON.h">
+      <Filter>Classes\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MD5\md5.h">
+      <Filter>Classes\MD5</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.txt" />
+  </ItemGroup>
+</Project>
