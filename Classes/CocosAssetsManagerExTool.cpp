@@ -49,6 +49,14 @@
 #define F_OK		(0)		/* Test for existence.  */
 #endif
 
+#ifdef WIN32
+#define PATH_SEPARATOR_CHAR				'\\'
+#define PATH_SEPARATOR_STRING			"\\"
+#else
+#define PATH_SEPARATOR_CHAR				'/'
+#define PATH_SEPARATOR_STRING			"/"
+#endif
+
 using namespace std;
 
 //////////////////////////////////////////////////////////////////////////
@@ -73,18 +81,10 @@ enum class RETURN_VALUE
 	UNKNOWN_ERROR = -1
 };
 
-#if defined(DEBUG) || defined(_DEBUG)
+#if defined(WIN32) && (defined(DEBUG) || defined(_DEBUG))
 #define RETURN(__ret__)					{ getchar(); return (int)(__ret__); }
 #else
 #define RETURN(__ret__)					{ return (int)(__ret__); }
-#endif
-
-#ifdef WIN32
-#define PATH_SEPARATOR_CHAR				'\\'
-#define PATH_SEPARATOR_STRING			"\\"
-#else
-#define PATH_SEPARATOR_CHAR				'/'
-#define PATH_SEPARATOR_STRING			"/"
 #endif
 
 //////////////////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ static void PrintLongGapLine(void)
 static void PrintVersion(void)
 {
 	printf("* %s  Ver. %s\r\n", EXEC_BINARY_NAME, EXEC_BINARY_VERSION);
-	printf("* Powered by Qwer34\r\n");
+	printf("* Powered by Xin Zhang\r\n");
 	printf("* %s %s\r\n", __TIME__, __DATE__);
 }
 
