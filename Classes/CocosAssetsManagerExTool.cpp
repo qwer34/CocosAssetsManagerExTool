@@ -62,7 +62,7 @@ using namespace std;
 //////////////////////////////////////////////////////////////////////////
 
 #define EXEC_BINARY_NAME				"CocosAssetsManagerExTool"
-#define EXEC_BINARY_VERSION				"0.0.2"
+#define EXEC_BINARY_VERSION				"0.0.1"
 #define PROJECT_MANIFEST_FILENAME		"project.manifest"
 #define VERSION_MANIFEST_FILENAME		"version.manifest"
 #define DEFAULT_ENGINE_VERSION			"3.7"
@@ -658,7 +658,7 @@ int main(int argc, char * argv[])
 
 	// remoteManifestUrl
 	{
-		string strRemoteManifestUrl = strURL + strVersion + "/" + PROJECT_MANIFEST_FILENAME;
+		string strRemoteManifestUrl = strURL + PROJECT_MANIFEST_FILENAME;
 		cJSON_AddItemToObject(cJsonRoot, "remoteManifestUrl", cJSON_CreateString(strRemoteManifestUrl.c_str()));
 	}
 
@@ -707,17 +707,14 @@ int main(int argc, char * argv[])
 
 	// 写入manifest文件
 	{
-		string strProjectManifestPath = strOutputPath + strVersion + PATH_SEPARATOR_STRING + PROJECT_MANIFEST_FILENAME;
-		string strDeprecatedProjectManifestPath = strOutputPath + PROJECT_MANIFEST_FILENAME;
+		string strProjectManifestPath = strOutputPath + PROJECT_MANIFEST_FILENAME;
 		string strVersionManifestPath = strOutputPath + VERSION_MANIFEST_FILENAME;
 
 #if defined(DEBUG) || defined(_DEBUG)
 		if (!WriteDataToFile(strProjectManifestPath, (const unsigned char *)strProjectManifestFormatted.c_str(), strProjectManifestFormatted.length()) ||
-			!WriteDataToFile(strDeprecatedProjectManifestPath, (const unsigned char *)strProjectManifestFormatted.c_str(), strProjectManifestFormatted.length()) ||
 			!WriteDataToFile(strVersionManifestPath, (const unsigned char *)strVersionManifestFormatted.c_str(), strVersionManifestFormatted.length()))
 #else
 		if (!WriteDataToFile(strProjectManifestPath, (const unsigned char *)strProjectManifestUnformatted.c_str(), strProjectManifestUnformatted.length()) ||
-			!WriteDataToFile(strDeprecatedProjectManifestPath, (const unsigned char *)strProjectManifestUnformatted.c_str(), strProjectManifestUnformatted.length()) ||
 			!WriteDataToFile(strVersionManifestPath, (const unsigned char *)strVersionManifestUnformatted.c_str(), strVersionManifestUnformatted.length()))
 #endif
 		{
